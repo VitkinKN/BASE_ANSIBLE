@@ -199,7 +199,7 @@ local                          execute on controller
             ansible_connection: local 
 ```
 #### Запустите playbook на окружении prod.yml. При запуске ansible должен запросить у вас пароль. Убедитесь что факты some_fact для каждого из хостов определены из верных group_vars.
-- *Добавил в *
+- *Добавил в group_vars local*
 ```
 konstantin@konstantin-forever:~/DEVOPS_COURSE/HOMEWORKNETOLOGY/BASE_ANSIBLE$ ansible-playbook -i inventory/prod.yml site.yml --ask-vault-pass
 Vault password: 
